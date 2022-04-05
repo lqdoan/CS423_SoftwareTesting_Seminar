@@ -11,9 +11,9 @@ Setup:
     npm install express --save
     npm install dotenv --save
     npm install mysql --save
-3/ run cmd to generate server.js:
+3/ run cmd to generate package.json:
     npm init
-3/ Edit the generated server.js from above to the same one in this repository
+3/ Edit the generated package.json from above to the same one in this repository
 4/ Config the database:
     Create a database on 'localhost' named with user 'root'
     Name the database and set password of your choices
