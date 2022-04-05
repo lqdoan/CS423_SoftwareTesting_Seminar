@@ -1,0 +1,33 @@
+Requirements:
++ Node.js (preferably latest version, currently ver 16)
+    run cmd 'node --version' to verify
++ MySql
+
+Setup:
+1/ Create a directory for our API
+2/ run cmd: 
+    cd <path_to_API_directory>
+    npm install --save-dev nodemon
+    npm install express --save
+    npm install dotenv --save
+    npm install mysql --save
+3/ run cmd to generate server.js:
+    npm init
+3/ Edit the generated server.js from above to the same one in this repository
+4/ Config the database:
+    Create a database on 'localhost' named with user 'root'
+    Name the database and set password of your choices
+    Create a table name 'books' with 4 columns: (id: INT, name: VARCHAR, author: VARCHAR, price: INT)
+5/ Start the API by cmd:
+    npm run start
+
+Send request in post man:
+    GET method: 
+        //All books
+        localhost:3000/books 
+        //By id:
+        localhost:3000/books?id=<an_integer>
+        //By author:
+        localhost:3000/books?author=<a_string>
+        //By id and author
+        localhost:3000/books?id=<an_integer>&author=<a_string>
